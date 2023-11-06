@@ -1,0 +1,1307 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ReactiveProperty.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Reactive.Bindings.AsyncReactiveCommand">
+            <summary>
+            Represents AsyncReactiveCommand&lt;object&gt;
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommand.#ctor">
+            <summary>
+            CanExecute is automatically changed when executing to false and finished to true.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommand.#ctor(System.IObservable{System.Boolean})">
+            <summary>
+            CanExecute is automatically changed when executing to false and finished to true.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommand.#ctor(System.IObservable{System.Boolean},Reactive.Bindings.IReactiveProperty{System.Boolean})">
+            <summary>
+            CanExecute is automatically changed when executing to false and finished to true.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommand.#ctor(Reactive.Bindings.IReactiveProperty{System.Boolean})">
+            <summary>
+            CanExecute is automatically changed when executing to false and finished to true. The
+            source is shared between other AsyncReactiveCommand.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommand.Execute">
+            <summary>
+            Push null to subscribers.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommand.ExecuteAsync">
+            <summary>
+            Push null to subscribers.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommand.Subscribe(System.Func{System.Threading.Tasks.Task})">
+            <summary>
+            Subscribe execute.
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.AsyncReactiveCommand`1">
+            <summary>
+            Async version ReactiveCommand
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="E:Reactive.Bindings.AsyncReactiveCommand`1.CanExecuteChanged">
+            <summary>
+            Occurs when changes occur that affect whether or not the command should execute.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommand`1.#ctor">
+            <summary>
+            CanExecute is automatically changed when executing to false and finished to true.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommand`1.#ctor(System.IObservable{System.Boolean})">
+            <summary>
+            CanExecute is automatically changed when executing to false and finished to true.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommand`1.#ctor(System.IObservable{System.Boolean},Reactive.Bindings.IReactiveProperty{System.Boolean})">
+            <summary>
+            CanExecute is automatically changed when executing to false and finished to true.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommand`1.#ctor(Reactive.Bindings.IReactiveProperty{System.Boolean})">
+            <summary>
+            CanExecute is automatically changed when executing to false and finished to true. The
+            source is shared between other AsyncReactiveCommand.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommand`1.CanExecute">
+            <summary>
+            Return current canExecute status.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommand`1.System#Windows#Input#ICommand#CanExecute(System.Object)">
+            <summary>
+            Return current canExecute status. parameter is ignored.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommand`1.Execute(`0)">
+            <summary>
+            Push parameter to subscribers, when executing CanExecuting is changed to false.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommand`1.ExecuteAsync(`0)">
+            <summary>
+            Push parameter to subscribers, when executing CanExecuting is changed to false.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommand`1.System#Windows#Input#ICommand#Execute(System.Object)">
+            <summary>
+            Push parameter to subscribers, when executing CanExecuting is changed to false.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommand`1.Subscribe(System.Func{`0,System.Threading.Tasks.Task})">
+            <summary>
+            Subscribe execute.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommand`1.Dispose">
+            <summary>
+            Stop all subscription and lock CanExecute is false.
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.AsyncReactiveCommandExtensions">
+            <summary>
+            AsyncReactiveCommand factory and extension methods.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommandExtensions.ToAsyncReactiveCommand(System.IObservable{System.Boolean})">
+            <summary>
+            CanExecute is automatically changed when executing to false and finished to true.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommandExtensions.ToAsyncReactiveCommand(System.IObservable{System.Boolean},Reactive.Bindings.IReactiveProperty{System.Boolean})">
+            <summary>
+            CanExecute is automatically changed when executing to false and finished to true.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommandExtensions.ToAsyncReactiveCommand``1(System.IObservable{System.Boolean})">
+            <summary>
+            CanExecute is automatically changed when executing to false and finished to true.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommandExtensions.ToAsyncReactiveCommand``1(System.IObservable{System.Boolean},Reactive.Bindings.IReactiveProperty{System.Boolean})">
+            <summary>
+            CanExecute is automatically changed when executing to false and finished to true.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommandExtensions.ToAsyncReactiveCommand(Reactive.Bindings.IReactiveProperty{System.Boolean})">
+            <summary>
+            CanExecute is automatically changed when executing to false and finished to true. The
+            source is shared between other AsyncReactiveCommand.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommandExtensions.ToAsyncReactiveCommand``1(Reactive.Bindings.IReactiveProperty{System.Boolean})">
+            <summary>
+            CanExecute is automatically changed when executing to false and finished to true. The
+            source is shared between other AsyncReactiveCommand.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommandExtensions.WithSubscribe(Reactive.Bindings.AsyncReactiveCommand,System.Func{System.Threading.Tasks.Task},System.Action{System.IDisposable})">
+            <summary>
+            Subscribe execute.
+            </summary>
+            <param name="self">AsyncReactiveCommand</param>
+            <param name="asyncAction">Action</param>
+            <param name="postProcess">Handling of the subscription.</param>
+            <returns>Same of self argument</returns>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommandExtensions.WithSubscribe``1(Reactive.Bindings.AsyncReactiveCommand{``0},System.Func{``0,System.Threading.Tasks.Task},System.Action{System.IDisposable})">
+            <summary>
+            Subscribe execute.
+            </summary>
+            <typeparam name="T">AsyncReactiveCommand type argument.</typeparam>
+            <param name="self">AsyncReactiveCommand</param>
+            <param name="asyncAction">Action</param>
+            <param name="postProcess">Handling of the subscription.</param>
+            <returns>Same of self argument</returns>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommandExtensions.WithSubscribe(Reactive.Bindings.AsyncReactiveCommand,System.Func{System.Threading.Tasks.Task},System.IDisposable@)">
+            <summary>
+            Subscribe execute.
+            </summary>
+            <param name="self">AsyncReactiveCommand</param>
+            <param name="asyncAction">Action</param>
+            <param name="disposable">The return value of self.Subscribe(asyncAction)</param>
+            <returns>Same of self argument</returns>
+        </member>
+        <member name="M:Reactive.Bindings.AsyncReactiveCommandExtensions.WithSubscribe``1(Reactive.Bindings.AsyncReactiveCommand{``0},System.Func{``0,System.Threading.Tasks.Task},System.IDisposable@)">
+            <summary>
+            Subscribe execute.
+            </summary>
+            <typeparam name="T">AsyncReactiveCommand type argument.</typeparam>
+            <param name="self">AsyncReactiveCommand</param>
+            <param name="asyncAction">Action</param>
+            <param name="disposable">The return value of self.Subscribe(asyncAction)</param>
+            <returns>Same of self argument</returns>
+        </member>
+        <member name="T:Reactive.Bindings.Disposables.CompositeDisposable">
+            <summary>
+            Collection of <see cref="T:System.IDisposable" />
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Disposables.CompositeDisposable.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Reactive.Disposables.CompositeDisposable"/> class with no disposables contained by it initially.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Disposables.CompositeDisposable.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Reactive.Disposables.CompositeDisposable"/> class with the specified number of disposables.
+            </summary>
+            <param name="capacity">The number of disposables that the new CompositeDisposable can initially store.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="capacity"/> is less than zero.</exception>
+        </member>
+        <member name="M:Reactive.Bindings.Disposables.CompositeDisposable.#ctor(System.IDisposable[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Reactive.Disposables.CompositeDisposable"/> class from a group of disposables.
+            </summary>
+            <param name="disposables">Disposables that will be disposed together.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="disposables"/> is null.</exception>
+        </member>
+        <member name="M:Reactive.Bindings.Disposables.CompositeDisposable.#ctor(System.Collections.Generic.IEnumerable{System.IDisposable})">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Reactive.Disposables.CompositeDisposable"/> class from a group of disposables.
+            </summary>
+            <param name="disposables">Disposables that will be disposed together.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="disposables"/> is null.</exception>
+        </member>
+        <member name="P:Reactive.Bindings.Disposables.CompositeDisposable.Count">
+            <summary>
+            Gets the number of disposables contained in the CompositeDisposable.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Disposables.CompositeDisposable.Add(System.IDisposable)">
+            <summary>
+            Adds a disposable to the CompositeDisposable or disposes the disposable if the CompositeDisposable is disposed.
+            </summary>
+            <param name="item">Disposable to add.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="item"/> is null.</exception>
+        </member>
+        <member name="M:Reactive.Bindings.Disposables.CompositeDisposable.Remove(System.IDisposable)">
+            <summary>
+            Removes and disposes the first occurrence of a disposable from the CompositeDisposable.
+            </summary>
+            <param name="item">Disposable to remove.</param>
+            <returns>true if found; false otherwise.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="item"/> is null.</exception>
+        </member>
+        <member name="M:Reactive.Bindings.Disposables.CompositeDisposable.Dispose">
+            <summary>
+            Disposes all disposables in the group and removes them from the group.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Disposables.CompositeDisposable.Clear">
+            <summary>
+            Removes and disposes all disposables from the CompositeDisposable, but does not dispose the CompositeDisposable.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Disposables.CompositeDisposable.Contains(System.IDisposable)">
+            <summary>
+            Determines whether the CompositeDisposable contains a specific disposable.
+            </summary>
+            <param name="item">Disposable to search for.</param>
+            <returns>true if the disposable was found; otherwise, false.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="item"/> is null.</exception>
+        </member>
+        <member name="M:Reactive.Bindings.Disposables.CompositeDisposable.CopyTo(System.IDisposable[],System.Int32)">
+            <summary>
+            Copies the disposables contained in the CompositeDisposable to an array, starting at a particular array index.
+            </summary>
+            <param name="array">Array to copy the contained disposables to.</param>
+            <param name="arrayIndex">Target index at which to copy the first disposable of the group.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="array"/> is null.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="arrayIndex"/> is less than zero. -or - <paramref name="arrayIndex"/> is larger than or equal to the array length.</exception>
+        </member>
+        <member name="P:Reactive.Bindings.Disposables.CompositeDisposable.IsReadOnly">
+            <summary>
+            Always returns false.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Disposables.CompositeDisposable.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the CompositeDisposable.
+            </summary>
+            <returns>An enumerator to iterate over the disposables.</returns>
+        </member>
+        <member name="M:Reactive.Bindings.Disposables.CompositeDisposable.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the CompositeDisposable.
+            </summary>
+            <returns>An enumerator to iterate over the disposables.</returns>
+        </member>
+        <member name="P:Reactive.Bindings.Disposables.CompositeDisposable.IsDisposed">
+            <summary>
+            Gets a value that indicates whether the object is disposed.
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.Extensions.IDisposableExtensions">
+            <summary>
+            IDisposable Extensions
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Extensions.IDisposableExtensions.AddTo``1(``0,System.Collections.Generic.ICollection{System.IDisposable})">
+            <summary>
+            Add disposable(self) to CompositeDisposable(or other ICollection)
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.Extensions.INotifyPropertyChangedExtensions">
+            <summary>
+            Extension methods for <see cref="T:System.ComponentModel.INotifyPropertyChanged"/>
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Extensions.INotifyPropertyChangedExtensions.PropertyChangedAsObservable``1(``0)">
+            <summary>
+            Converts PropertyChanged to an observable sequence.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Extensions.INotifyPropertyChangedExtensions.ObserveProperty``2(``0,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Boolean)">
+            <summary>
+            Converts NotificationObject's property changed to an observable sequence.
+            </summary>
+            <typeparam name="TSubject">The type of the subject.</typeparam>
+            <typeparam name="TProperty">The type of the property.</typeparam>
+            <param name="subject">The subject.</param>
+            <param name="propertySelector">Argument is self, Return is target property.</param>
+            <param name="isPushCurrentValueAtFirst">Push current value on first subscribe.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Reactive.Bindings.Extensions.INotifyPropertyChangedExtensions.ToReactivePropertySlimAsSynchronized``2(``0,System.Linq.Expressions.Expression{System.Func{``0,``1}},Reactive.Bindings.ReactivePropertyMode)">
+            <summary>
+            <para>Converts NotificationObject's property to ReactivePropertySlim. Value is two-way synchronized.</para>
+            <para>PropertyChanged raise on selected scheduler.</para>
+            </summary>
+            <typeparam name="TSubject">The type of the subject.</typeparam>
+            <typeparam name="TProperty">The type of the property.</typeparam>
+            <param name="subject">The subject.</param>
+            <param name="propertySelector">Argument is self, Return is target property.</param>
+            <param name="mode">ReactiveProperty mode.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Reactive.Bindings.Extensions.INotifyPropertyChangedExtensions.ToReactivePropertySlimAsSynchronized``3(``0,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Func{``1,``2},System.Func{``2,``1},Reactive.Bindings.ReactivePropertyMode)">
+            <summary>
+            <para>Converts NotificationObject's property to ReactivePropertySlim. Value is two-way synchronized.</para>
+            <para>PropertyChanged raise on selected scheduler.</para>
+            </summary>
+            <typeparam name="TSubject">The type of the subject.</typeparam>
+            <typeparam name="TProperty">The type of the property.</typeparam>
+            <typeparam name="TResult">The type of the result.</typeparam>
+            <param name="subject">The subject.</param>
+            <param name="propertySelector">Argument is self, Return is target property.</param>
+            <param name="convert">Convert selector to ReactiveProperty.</param>
+            <param name="convertBack">Convert selector to source.</param>
+            <param name="mode">ReactiveProperty mode.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Reactive.Bindings.Extensions.INotifyPropertyChangedExtensions.ToReactivePropertySlimAsSynchronized``3(``0,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Func{System.IObservable{``1},System.IObservable{``2}},System.Func{System.IObservable{``2},System.IObservable{``1}},Reactive.Bindings.ReactivePropertyMode)">
+            <summary>
+            <para>Converts NotificationObject's property to ReactiveProperty. Value is two-way synchronized.</para>
+            <para>PropertyChanged raise on selected scheduler.</para>
+            </summary>
+            <typeparam name="TSubject">The type of the subject.</typeparam>
+            <typeparam name="TProperty">The type of the property.</typeparam>
+            <typeparam name="TResult">The type of the result.</typeparam>
+            <param name="subject">The subject.</param>
+            <param name="propertySelector">Argument is self, Return is target property.</param>
+            <param name="convert">Convert selector to ReactiveProperty.</param>
+            <param name="convertBack">Convert selector to source.</param>
+            <param name="mode">ReactiveProperty mode.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Reactive.Bindings.IHasErrors">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.IHasErrors.ObserveErrorChanged">
+            <summary>
+            Gets the observe error changed.
+            </summary>
+            <value>The observe error changed.</value>
+        </member>
+        <member name="P:Reactive.Bindings.IHasErrors.ObserveHasErrors">
+            <summary>
+            Gets the observe has errors.
+            </summary>
+            <value>The observe has errors.</value>
+        </member>
+        <member name="T:Reactive.Bindings.Internals.AccessorCache`1">
+            <summary>
+            Accessor Cache
+            </summary>
+            <typeparam name="TType">The type of the type.</typeparam>
+        </member>
+        <member name="M:Reactive.Bindings.Internals.AccessorCache`1.LookupGet``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.String@)">
+            <summary>
+            Lookups the get.
+            </summary>
+            <typeparam name="TProperty">The type of the property.</typeparam>
+            <param name="propertySelector">The property selector.</param>
+            <param name="propertyName">Name of the property.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Reactive.Bindings.Internals.AccessorCache`1.LookupNestedGet``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.String@)">
+            <summary>
+            Lookups the get.
+            </summary>
+            <typeparam name="TProperty">The type of the property.</typeparam>
+            <param name="propertySelector">The property selector.</param>
+            <param name="propertyName">Name of the property.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Reactive.Bindings.Internals.AccessorCache`1.LookupSet``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.String@)">
+            <summary>
+            Lookups the set.
+            </summary>
+            <typeparam name="TProperty">The type of the property.</typeparam>
+            <param name="propertySelector">The property selector.</param>
+            <param name="propertyName">Name of the property.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Reactive.Bindings.IReactiveProperty">
+            <summary>
+            for EventToReactive and Serialization
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.IReactiveProperty.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="M:Reactive.Bindings.IReactiveProperty.ForceNotify">
+            <summary>
+            Forces the notify.
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.IReactiveProperty`1">
+            <summary>
+            </summary>
+            <typeparam name="T"></typeparam>
+            <seealso cref="T:Reactive.Bindings.IHasErrors"/>
+        </member>
+        <member name="P:Reactive.Bindings.IReactiveProperty`1.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="T:Reactive.Bindings.IReadOnlyReactiveProperty">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.IReadOnlyReactiveProperty.Value">
+            <summary>
+            Gets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="T:Reactive.Bindings.IReadOnlyReactiveProperty`1">
+            <summary>
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Reactive.Bindings.IReadOnlyReactiveProperty`1.Value">
+            <summary>
+            Gets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="T:Reactive.Bindings.Notifiers.BooleanNotifier">
+            <summary>
+            Notify boolean flag.
+            </summary>
+        </member>
+        <member name="E:Reactive.Bindings.Notifiers.BooleanNotifier.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Reactive.Bindings.Notifiers.BooleanNotifier.Value">
+            <summary>
+            Current flag value
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.BooleanNotifier.#ctor(System.Boolean)">
+            <summary>
+            Setup initial flag.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.BooleanNotifier.TurnOn">
+            <summary>
+            Set and raise true if current value isn't true.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.BooleanNotifier.TurnOff">
+            <summary>
+            Set and raise false if current value isn't false.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.BooleanNotifier.SwitchValue">
+            <summary>
+            Set and raise reverse value.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.BooleanNotifier.Subscribe(System.IObserver{System.Boolean})">
+            <summary>
+            Subscribe observer.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.BooleanNotifier.OnPropertyChanged(System.String)">
+            <summary>
+            Called when [property changed].
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+        </member>
+        <member name="T:Reactive.Bindings.Notifiers.BusyNotifier">
+            <summary>
+            Notify of busy.
+            </summary>
+        </member>
+        <member name="E:Reactive.Bindings.Notifiers.BusyNotifier.PropertyChanged">
+            <summary>
+            property changed event handler
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.Notifiers.BusyNotifier.IsBusy">
+            <summary>
+            Is process running.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.BusyNotifier.ProcessStart">
+            <summary>
+            Process start.
+            </summary>
+            <returns>Call dispose method when process end.</returns>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.BusyNotifier.Subscribe(System.IObserver{System.Boolean})">
+            <summary>
+            Subscribe busy.
+            </summary>
+            <param name="observer">observer</param>
+            <returns>disposable</returns>
+        </member>
+        <member name="T:Reactive.Bindings.Notifiers.CountChangedStatus">
+            <summary>
+            Event kind of CountNotifier.
+            </summary>
+        </member>
+        <member name="F:Reactive.Bindings.Notifiers.CountChangedStatus.Increment">
+            <summary>
+            Count incremented.
+            </summary>
+        </member>
+        <member name="F:Reactive.Bindings.Notifiers.CountChangedStatus.Decrement">
+            <summary>
+            Count decremented.
+            </summary>
+        </member>
+        <member name="F:Reactive.Bindings.Notifiers.CountChangedStatus.Empty">
+            <summary>
+            Count is zero.
+            </summary>
+        </member>
+        <member name="F:Reactive.Bindings.Notifiers.CountChangedStatus.Max">
+            <summary>
+            Count arrived max.
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.Notifiers.CountNotifier">
+            <summary>
+            Notify event of count flag.
+            </summary>
+        </member>
+        <member name="E:Reactive.Bindings.Notifiers.CountNotifier.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Reactive.Bindings.Notifiers.CountNotifier.Max">
+            <summary>
+            Gets the maximum.
+            </summary>
+            <value>The maximum.</value>
+        </member>
+        <member name="P:Reactive.Bindings.Notifiers.CountNotifier.Count">
+            <summary>
+            Gets the count.
+            </summary>
+            <value>The count.</value>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.CountNotifier.#ctor(System.Int32)">
+            <summary>
+            Setup max count of signal.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.CountNotifier.Increment(System.Int32)">
+            <summary>
+            Increment count and notify status.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.CountNotifier.Decrement(System.Int32)">
+            <summary>
+            Decrement count and notify status.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.CountNotifier.Subscribe(System.IObserver{Reactive.Bindings.Notifiers.CountChangedStatus})">
+            <summary>
+            Subscribe observer.
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.Notifiers.IMessagePublisher">
+            <summary>
+            In-Memory PubSub filtered by Type.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.IMessagePublisher.Publish``1(``0)">
+            <summary>
+            Send Message to all receiver.
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.Notifiers.IMessageSubscriber">
+            <summary>
+            In-Memory PubSub filtered by Type.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.IMessageSubscriber.Subscribe``1(System.Action{``0})">
+            <summary>
+            Subscribe typed message.
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.Notifiers.IMessageBroker">
+            <summary>
+            In-Memory PubSub filtered by Type.
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.Notifiers.IAsyncMessagePublisher">
+            <summary>
+            In-Memory PubSub filtered by Type.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.IAsyncMessagePublisher.PublishAsync``1(``0)">
+            <summary>
+            Send Message to all receiver and await complete.
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.Notifiers.IAsyncMessageSubscriber">
+            <summary>
+            In-Memory PubSub filtered by Type.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.IAsyncMessageSubscriber.Subscribe``1(System.Func{``0,System.Threading.Tasks.Task})">
+            <summary>
+            Subscribe typed message.
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.Notifiers.IAsyncMessageBroker">
+            <summary>
+            In-Memory PubSub filtered by Type.
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.Notifiers.MessageBroker">
+            <summary>
+            In-Memory PubSub filtered by Type.
+            </summary>
+        </member>
+        <member name="F:Reactive.Bindings.Notifiers.MessageBroker.Default">
+            <summary>
+            MessageBroker in Global scope.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.MessageBroker.Publish``1(``0)">
+            <summary>
+            Send Message to all receiver.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.MessageBroker.Subscribe``1(System.Action{``0})">
+            <summary>
+            Subscribe typed message.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.MessageBroker.Dispose">
+            <summary>
+            Stop Pub-Sub system.
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.Notifiers.AsyncMessageBroker">
+            <summary>
+            In-Memory PubSub filtered by Type.
+            </summary>
+        </member>
+        <member name="F:Reactive.Bindings.Notifiers.AsyncMessageBroker.Default">
+            <summary>
+            AsyncMessageBroker in Global scope.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.AsyncMessageBroker.PublishAsync``1(``0)">
+            <summary>
+            Send Message to all receiver and await complete.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.AsyncMessageBroker.Subscribe``1(System.Func{``0,System.Threading.Tasks.Task})">
+            <summary>
+            Subscribe typed message.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.AsyncMessageBroker.Dispose">
+            <summary>
+            Stop Pub-Sub system.
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.Notifiers.MessageBrokerExtensions">
+            <summary>
+            Extensions of MessageBroker.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.Notifiers.MessageBrokerExtensions.ToObservable``1(Reactive.Bindings.Notifiers.IMessageSubscriber)">
+            <summary>
+            Convert IMessageSubscriber.Subscribe to Observable.
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.ReactiveCommandSlim">
+            <summary>
+            <inheritdoc />
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlim.#ctor">
+            <summary>
+            Create a ReactiveCommandSlim instance.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlim.#ctor(Reactive.Bindings.IReadOnlyReactiveProperty{System.Boolean})">
+            <summary>
+            Create a ReactiveCommandSlim instance.
+            </summary>
+            <param name="sharedCanExecute">The shared CanExecute status</param>
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlim.#ctor(System.IObservable{System.Boolean},System.Boolean)">
+            <summary>
+            Create a ReactiveCommandSlim instance.
+            </summary>
+            <param name="canExecuteSource">The CanExecute source</param>
+            <param name="initialValue">The canExecuteSource initial value if not provided</param>
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlim.#ctor(System.IObservable{System.Boolean},Reactive.Bindings.IReadOnlyReactiveProperty{System.Boolean},System.Boolean)">
+            <summary>
+            Create a ReactiveCommandSlim instance.
+            </summary>
+            <param name="canExecuteSource">The CanExecute source</param>
+            <param name="sharedCanExecute">The shared CanExecute status</param>
+            <param name="initialValue">The canExecuteSource initial value if not provided</param>
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlim.Execute">
+            <summary>
+            Push null to subscribers.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlim.CanExecute">
+            <summary>
+            <see cref="M:System.Windows.Input.ICommand.CanExecute(System.Object)" />
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlim.Subscribe(System.Action)">
+            <summary>
+            Subscribe execute.
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.ReactiveCommandSlim`1">
+            <summary>
+            <see cref="T:System.Windows.Input.ICommand"/> implementation for ReactiveProperty.
+            </summary>
+        </member>
+        <member name="E:Reactive.Bindings.ReactiveCommandSlim`1.CanExecuteChanged">
+            <inheritdoc />
+        </member>
+        <member name="P:Reactive.Bindings.ReactiveCommandSlim`1.IsDisposed">
+            <summary>
+            Gets a value indicating whether this instance is disposed.
+            </summary>
+            <value><c>true</c> if this instance is disposed; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlim`1.#ctor">
+            <summary>
+            CanExecute is automatically changed when executing to false and finished to true.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlim`1.#ctor(Reactive.Bindings.IReadOnlyReactiveProperty{System.Boolean})">
+            <summary>
+            CanExecute is automatically changed when executing to false and finished to true.
+            </summary>
+            <param name="sharedCanExecute">The shared CanExecute status</param>
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlim`1.#ctor(System.IObservable{System.Boolean},System.Boolean)">
+            <summary>
+            CanExecute is automatically changed when executing to false and finished to true.
+            </summary>
+            <param name="canExecuteSource">The CanExecute source</param>
+            <param name="initialValue">The canExecuteSource initial value if not provided</param>
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlim`1.#ctor(System.IObservable{System.Boolean},Reactive.Bindings.IReadOnlyReactiveProperty{System.Boolean},System.Boolean)">
+            <summary>
+            CanExecute is automatically changed when executing to false and finished to true.
+            </summary>
+            <param name="canExecuteSource">The CanExecute source</param>
+            <param name="sharedCanExecute">The shared CanExecute status</param>
+            <param name="initialValue">The canExecuteSource initial value if not provided</param>
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlim`1.CanExecute(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlim`1.Execute(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlim`1.Subscribe(System.Action{`0})">
+            <summary>
+            Subscribe execute.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlim`1.System#Windows#Input#ICommand#CanExecute(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlim`1.System#Windows#Input#ICommand#Execute(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlim`1.Subscribe(System.IObserver{`0})">
+            <summary>
+            Notifies the provider that an observer is to receive notifications.
+            </summary>
+            <param name="observer">The object that is to receive notifications.</param>
+            <returns>
+            A reference to an interface that allows observers to stop receiving notifications before
+            the provider has finished sending them.
+            </returns>
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlim`1.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting
+            unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.ReactiveCommandSlimExtensions">
+            <summary>
+            ReactiveCommand factory extension methods.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlimExtensions.ToReactiveCommandSlim(System.IObservable{System.Boolean},System.Boolean)">
+            <summary>
+            CanExecuteChanged is called from canExecute sequence on UIDispatcherScheduler.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlimExtensions.ToReactiveCommandSlim``1(System.IObservable{System.Boolean},System.Boolean)">
+            <summary>
+            CanExecuteChanged is called from canExecute sequence on UIDispatcherScheduler.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlimExtensions.ToReactiveCommandSlim(System.IObservable{System.Boolean},Reactive.Bindings.IReadOnlyReactiveProperty{System.Boolean},System.Boolean)">
+            <summary>
+            CanExecuteChanged is called from canExecute sequence on UIDispatcherScheduler.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlimExtensions.ToReactiveCommandSlim``1(System.IObservable{System.Boolean},Reactive.Bindings.IReadOnlyReactiveProperty{System.Boolean},System.Boolean)">
+            <summary>
+            CanExecuteChanged is called from canExecute sequence on UIDispatcherScheduler.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlimExtensions.WithSubscribe(Reactive.Bindings.ReactiveCommandSlim,System.Action,System.Action{System.IDisposable})">
+            <summary>
+            Subscribe execute.
+            </summary>
+            <param name="self">ReactiveCommand</param>
+            <param name="onNext">Action</param>
+            <param name="postProcess">Handling of the subscription.</param>
+            <returns>Same of self argument</returns>
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlimExtensions.WithSubscribe``1(Reactive.Bindings.ReactiveCommandSlim{``0},System.Action{``0},System.Action{System.IDisposable})">
+            <summary>
+            Subscribe execute.
+            </summary>
+            <typeparam name="T">ReactiveCommand type argument.</typeparam>
+            <param name="self">ReactiveCommand</param>
+            <param name="onNext">Action</param>
+            <param name="postProcess">Handling of the subscription.</param>
+            <returns>Same of self argument</returns>
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlimExtensions.WithSubscribe(Reactive.Bindings.ReactiveCommandSlim,System.Action,System.IDisposable@)">
+            <summary>
+            Subscribe execute.
+            </summary>
+            <param name="self">ReactiveCommand</param>
+            <param name="onNext">Action</param>
+            <param name="disposable">The return value of self.Subscribe(onNext)</param>
+            <returns>Same of self argument</returns>
+        </member>
+        <member name="M:Reactive.Bindings.ReactiveCommandSlimExtensions.WithSubscribe``1(Reactive.Bindings.ReactiveCommandSlim{``0},System.Action{``0},System.IDisposable@)">
+            <summary>
+            Subscribe execute.
+            </summary>
+            <typeparam name="T">ReactiveCommand type argument.</typeparam>
+            <param name="self">ReactiveCommand</param>
+            <param name="onNext">Action</param>
+            <param name="disposable">The return value of self.Subscribe(onNext)</param>
+            <returns>Same of self argument</returns>
+        </member>
+        <member name="T:Reactive.Bindings.ReactivePropertyMode">
+            <summary>
+            Mode of ReactiveProperty
+            </summary>
+        </member>
+        <member name="F:Reactive.Bindings.ReactivePropertyMode.None">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:Reactive.Bindings.ReactivePropertyMode.DistinctUntilChanged">
+            <summary>
+            If next value is same as current, not set and not notify.
+            </summary>
+        </member>
+        <member name="F:Reactive.Bindings.ReactivePropertyMode.RaiseLatestValueOnSubscribe">
+            <summary>
+            Push notify on instance created and subscribed.
+            </summary>
+        </member>
+        <member name="F:Reactive.Bindings.ReactivePropertyMode.IgnoreInitialValidationError">
+            <summary>
+            Ignore initial validation error
+            </summary>
+        </member>
+        <member name="F:Reactive.Bindings.ReactivePropertyMode.IgnoreException">
+            <summary>
+            Ignore exception
+            </summary>
+        </member>
+        <member name="F:Reactive.Bindings.ReactivePropertyMode.Default">
+            <summary>
+            Default mode value. It is same as DistinctUntilChanged | RaiseLatestValueOnSubscribe.
+            </summary>
+        </member>
+        <member name="T:Reactive.Bindings.ReactivePropertySlim`1">
+            <summary>
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="E:Reactive.Bindings.ReactivePropertySlim`1.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Reactive.Bindings.ReactivePropertySlim`1.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="P:Reactive.Bindings.ReactivePropertySlim`1.IsDisposed">
+            <summary>
+            Gets a value indicating whether this instance is disposed.
+            </summary>
+            <value><c>true</c> if this instance is disposed; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Reactive.Bindings.ReactivePropertySlim`1.IsDistinctUntilChanged">
+            <summary>
+            Gets a value indicating whether this instance is distinct until changed.
+            </summary>
+            <value><c>true</c> if this instance is distinct until changed; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Reactive.Bindings.ReactivePropertySlim`1.IsRaiseLatestValueOnSubscribe">
+            <summary>
+            Gets a value indicating whether this instance is raise latest value on subscribe.
+            </summary>
+            <value>
+            <c>true</c> if this instance is raise latest value on subscribe; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Reactive.Bindings.ReactivePropertySlim`1.#ctor(`0,Reactive.Bindings.ReactivePropertyMode,System.Collections.Generic.IEqualityComparer{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Reactive.Bindings.ReactivePropertySlim`1"/> class.
+            </summary>
+            <param name="initialValue">The initial value.</param>
+            <param name="mode">The mode.</param>
+            <param name="equalityComparer">The equality comparer.</param>
+        </member>
+        <member name="M:Reactive.Bindings.ReactivePropertySlim`1.ForceNotify">
+            <summary>
+            Forces the notify.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.ReactivePropertySlim`1.Subscribe(System.IObserver{`0})">
+            <summary>
+            Notifies the provider that an observer is to receive notifications.
+            </summary>
+            <param name="observer">The object that is to receive notifications.</param>
+            <returns>
+            A reference to an interface that allows observers to stop receiving notifications before
+            the provider has finished sending them.
+            </returns>
+        </member>
+        <member name="M:Reactive.Bindings.ReactivePropertySlim`1.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting
+            unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.ReactivePropertySlim`1.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+            <returns>A <see cref="T:System.String"/> that represents this instance.</returns>
+        </member>
+        <member name="T:Reactive.Bindings.ReadOnlyReactivePropertySlim`1">
+            <summary>
+            </summary>
+            <typeparam name="T"></typeparam>
+            <seealso cref="T:Reactive.Bindings.IReadOnlyReactiveProperty`1"/>
+            <seealso cref="T:Reactive.Bindings.Internals.IObserverLinkedList`1"/>
+            <seealso cref="T:System.IObserver`1"/>
+        </member>
+        <member name="E:Reactive.Bindings.ReadOnlyReactivePropertySlim`1.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Reactive.Bindings.ReadOnlyReactivePropertySlim`1.Value">
+            <summary>
+            Gets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="P:Reactive.Bindings.ReadOnlyReactivePropertySlim`1.IsDisposed">
+            <summary>
+            Gets a value indicating whether this instance is disposed.
+            </summary>
+            <value><c>true</c> if this instance is disposed; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:Reactive.Bindings.ReadOnlyReactivePropertySlim`1.#ctor(System.IObservable{`0},`0,Reactive.Bindings.ReactivePropertyMode,System.Collections.Generic.IEqualityComparer{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Reactive.Bindings.ReadOnlyReactivePropertySlim`1"/> class.
+            </summary>
+            <param name="source">The source.</param>
+            <param name="initialValue">The initial value.</param>
+            <param name="mode">The mode.</param>
+            <param name="equalityComparer">The equality comparer.</param>
+        </member>
+        <member name="M:Reactive.Bindings.ReadOnlyReactivePropertySlim`1.Subscribe(System.IObserver{`0})">
+            <summary>
+            Notifies the provider that an observer is to receive notifications.
+            </summary>
+            <param name="observer">The object that is to receive notifications.</param>
+            <returns>
+            A reference to an interface that allows observers to stop receiving notifications before
+            the provider has finished sending them.
+            </returns>
+        </member>
+        <member name="M:Reactive.Bindings.ReadOnlyReactivePropertySlim`1.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting
+            unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.ReadOnlyReactivePropertySlim`1.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+            <returns>A <see cref="T:System.String"/> that represents this instance.</returns>
+        </member>
+        <member name="T:Reactive.Bindings.ReadOnlyReactivePropertySlim">
+            <summary>
+            </summary>
+            <seealso cref="T:Reactive.Bindings.IReadOnlyReactiveProperty`1"/>
+            <seealso cref="T:Reactive.Bindings.Internals.IObserverLinkedList`1"/>
+            <seealso cref="T:System.IObserver`1"/>
+        </member>
+        <member name="M:Reactive.Bindings.ReadOnlyReactivePropertySlim.ToReadOnlyReactivePropertySlim``1(System.IObservable{``0},``0,Reactive.Bindings.ReactivePropertyMode,System.Collections.Generic.IEqualityComparer{``0})">
+            <summary>
+            To the read only reactive property slim.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source">The source.</param>
+            <param name="initialValue">The initial value.</param>
+            <param name="mode">The mode.</param>
+            <param name="equalityComparer">The equality comparer.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Reactive.Bindings.TinyLinq.ObservableExtensions">
+            <summary>
+            Minimal LINQ subset extension methods (Select, Where and CombineLatest only).
+            If you want to use more LINQ methods, please add System.Reactive package from NuGet.
+            And Replace namespace from Reactive.Bindings.TinyLinq to System.Reactive.Linq.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.TinyLinq.ObservableExtensions.Select``2(System.IObservable{``0},System.Func{``0,``1})">
+            <summary>
+            Projects each element of an observable sequence into a new form with the spcified source and selector
+            </summary>
+            <typeparam name="TSource">The type of source.</typeparam>
+            <typeparam name="TResule">The type of result.</typeparam>
+            <param name="source">A sequence of elements to invoke a transform function on.</param>
+            <param name="selector">A transform function to apply to each source element.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Reactive.Bindings.TinyLinq.ObservableExtensions.Where``1(System.IObservable{``0},System.Func{``0,System.Boolean})">
+            <summary>
+            Filters the elements of an observable sequence based on a predicate.
+            </summary>
+            <typeparam name="TSource">The type of source.</typeparam>
+            <param name="source">An observable sequence whose elements to filter.</param>
+            <param name="filter">A function to test each source element for a condition.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Reactive.Bindings.TinyLinq.ObservableExtensions.CombineLatest``2(System.Collections.Generic.IEnumerable{System.IObservable{``0}},System.Func{System.Collections.Generic.IList{``0},``1})">
+            <summary>
+            Merges observable sequences into one observable sequence by using the selector function whenever one of the observable sequences produces an element.
+            </summary>
+            <typeparam name="TSource">The source type.</typeparam>
+            <typeparam name="TResult">The result type.</typeparam>
+            <param name="sources">The observable sources.</param>
+            <param name="resultSelector">The function to invoke whenever either of the sources produces an element.</param>
+            <returns>An observable sequence containing the result of combining elements of all sources using the specified result selector function.</returns>
+        </member>
+        <member name="T:Reactive.Bindings.ValidatableReactiveProperty`1">
+            <summary>
+            IReactiveProperty implementations with validation feature.
+            </summary>
+            <typeparam name="T">The value type.</typeparam>
+        </member>
+        <member name="P:Reactive.Bindings.ValidatableReactiveProperty`1.ErrorMessage">
+            <summary>
+            Return the first error message from GetErrors(). If HasErrors is false, then return empty string.
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.ValidatableReactiveProperty`1.Value">
+            <inheritdoc/>
+        </member>
+        <member name="P:Reactive.Bindings.ValidatableReactiveProperty`1.Source">
+            <summary>
+            Get the source IReactiveProperty.
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.ValidatableReactiveProperty`1.Reactive#Bindings#IHasErrors#ObserveErrorChanged">
+            <inheritdoc/>
+        </member>
+        <member name="P:Reactive.Bindings.ValidatableReactiveProperty`1.ObserveErrorChanged">
+            <summary>
+            Get the observe error changed.
+            </summary>
+        </member>
+        <member name="P:Reactive.Bindings.ValidatableReactiveProperty`1.ObserveHasErrors">
+            <inheritdoc/>
+        </member>
+        <member name="P:Reactive.Bindings.ValidatableReactiveProperty`1.HasErrors">
+            <inheritdoc/>
+        </member>
+        <member name="P:Reactive.Bindings.ValidatableReactiveProperty`1.Reactive#Bindings#IReactiveProperty#Value">
+            <inheritdoc/>
+        </member>
+        <member name="P:Reactive.Bindings.ValidatableReactiveProperty`1.Reactive#Bindings#IReadOnlyReactiveProperty{T}#Value">
+            <inheritdoc/>
+        </member>
+        <member name="P:Reactive.Bindings.ValidatableReactiveProperty`1.Reactive#Bindings#IReadOnlyReactiveProperty#Value">
+            <inheritdoc/>
+        </member>
+        <member name="P:Reactive.Bindings.ValidatableReactiveProperty`1.IsDisposed">
+            <summary>
+            Gets a value indicating whether this instance is disposed.
+            </summary>
+            <value><c>true</c> if this instance is disposed; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Reactive.Bindings.ValidatableReactiveProperty`1.IsDistinctUntilChanged">
+            <summary>
+            Gets a value indicating whether this instance is distinct until changed.
+            </summary>
+            <value><c>true</c> if this instance is distinct until changed; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Reactive.Bindings.ValidatableReactiveProperty`1.IsRaiseLatestValueOnSubscribe">
+            <summary>
+            Gets a value indicating whether this instance is raise latest value on subscribe.
+            </summary>
+            <value>
+            <c>true</c> if this instance is raise latest value on subscribe; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Reactive.Bindings.ValidatableReactiveProperty`1.IsIgnoreInitialValidationError">
+            <summary>
+            Gets a value indicating whether this instance is ignore first validation errors.
+            </summary>
+            <value>
+            <c>true</c> if this instance ignore first validation errors; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="E:Reactive.Bindings.ValidatableReactiveProperty`1.PropertyChanged">
+            <inheritdoc/>
+        </member>
+        <member name="E:Reactive.Bindings.ValidatableReactiveProperty`1.ErrorsChanged">
+            <inheritdoc/>
+        </member>
+        <member name="M:Reactive.Bindings.ValidatableReactiveProperty`1.#ctor(Reactive.Bindings.IReactiveProperty{`0},System.Collections.Generic.IEnumerable{System.Func{`0,System.String}},Reactive.Bindings.ReactivePropertyMode,System.Collections.Generic.IEqualityComparer{`0},System.Boolean)">
+            <summary>
+            Create a ValidatableReactiveProperty instance.
+            </summary>
+            <param name="source">The source IReactiveProperty</param>
+            <param name="validators">The validation logics.</param>
+            <param name="mode">The ReactivePropertyMode</param>
+            <param name="equalityComparer">The EqualityComparer for T</param>
+            <param name="disposeSource">Call Dispose of the source parameter when ValidatableReactiveProperty was called Dispose.</param>
+        </member>
+        <member name="M:Reactive.Bindings.ValidatableReactiveProperty`1.#ctor(Reactive.Bindings.IReactiveProperty{`0},System.Func{`0,System.String},Reactive.Bindings.ReactivePropertyMode,System.Collections.Generic.IEqualityComparer{`0},System.Boolean)">
+            <summary>
+            Create a ValidatableReactiveProperty instance.
+            </summary>
+            <param name="source">The source IReactiveProperty</param>
+            <param name="validator">The validation logic.</param>
+            <param name="mode">The ReactivePropertyMode</param>
+            <param name="equalityComparer">The EqualityComparer for T</param>
+            <param name="disposeSource">Call Dispose of the source parameter when ValidatableReactiveProperty was called Dispose.</param>
+        </member>
+        <member name="M:Reactive.Bindings.ValidatableReactiveProperty`1.#ctor(`0,System.Collections.Generic.IEnumerable{System.Func{`0,System.String}},Reactive.Bindings.ReactivePropertyMode,System.Collections.Generic.IEqualityComparer{`0})">
+            <summary>
+            Create a ValidatableReactiveProperty instance.
+            </summary>
+            <param name="initialValue">An initial value for ValidatableReactiveProperty.</param>
+            <param name="validators">The validation logics.</param>
+            <param name="mode">The ReactivePropertyMode</param>
+            <param name="equalityComparer">The EqualityComparer for T</param>
+        </member>
+        <member name="M:Reactive.Bindings.ValidatableReactiveProperty`1.#ctor(`0,System.Func{`0,System.String},Reactive.Bindings.ReactivePropertyMode,System.Collections.Generic.IEqualityComparer{`0})">
+            <summary>
+            Create a ValidatableReactiveProperty instance.
+            </summary>
+            <param name="initialValue">An initial value for ValidatableReactiveProperty.</param>
+            <param name="validator">The validation logic.</param>
+            <param name="mode">The ReactivePropertyMode</param>
+            <param name="equalityComparer">The EqualityComparer for T</param>
+        </member>
+        <member name="M:Reactive.Bindings.ValidatableReactiveProperty`1.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting
+            unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.ValidatableReactiveProperty`1.ForceNotify">
+            <inheritdoc/>
+        </member>
+        <member name="M:Reactive.Bindings.ValidatableReactiveProperty`1.System#ComponentModel#INotifyDataErrorInfo#GetErrors(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Reactive.Bindings.ValidatableReactiveProperty`1.GetErrors">
+            <summary>
+            Get error messages. If HasErros is false, then return empty string array.
+            </summary>
+            <returns>The error messages.</returns>
+        </member>
+        <member name="M:Reactive.Bindings.ValidatableReactiveProperty`1.Subscribe(System.IObserver{`0})">
+            <summary>
+            Notifies the provider that an observer is to receive notifications.
+            </summary>
+            <param name="observer">The object that is to receive notifications.</param>
+            <returns>
+            A reference to an interface that allows observers to stop receiving notifications before
+            the provider has finished sending them.
+            </returns>
+        </member>
+        <member name="T:Reactive.Bindings.ValidatableReactiveProperty">
+            <summary>
+            Factory extension methods for ValidatableReactiveProperty
+            </summary>
+        </member>
+        <member name="M:Reactive.Bindings.ValidatableReactiveProperty.ToValidatableReactiveProperty``1(Reactive.Bindings.IReactiveProperty{``0},System.Func{``0,System.String},Reactive.Bindings.ReactivePropertyMode,System.Collections.Generic.IEqualityComparer{``0},System.Boolean)">
+            <summary>
+            Create the ValidatableReactiveProperty instance.
+            </summary>
+            <param name="source">The source IReactiveProperty</param>
+            <param name="validator">The validation logic.</param>
+            <param name="mode">The ReactivePropertyMode</param>
+            <param name="equalityComparer">The EqualityComparer for T</param>
+            <param name="disposeSource">Call Dispose of the source parameter when ValidatableReactiveProperty was called Dispose.</param>
+        </member>
+        <member name="M:Reactive.Bindings.ValidatableReactiveProperty.ToValidatableReactiveProperty``1(Reactive.Bindings.IReactiveProperty{``0},System.Collections.Generic.IEnumerable{System.Func{``0,System.String}},Reactive.Bindings.ReactivePropertyMode,System.Collections.Generic.IEqualityComparer{``0},System.Boolean)">
+            <summary>
+            Create the ValidatableReactiveProperty instance.
+            </summary>
+            <param name="source">The source IReactiveProperty</param>
+            <param name="validators">The validation logics.</param>
+            <param name="mode">The ReactivePropertyMode</param>
+            <param name="equalityComparer">The EqualityComparer for T</param>
+            <param name="disposeSource">Call Dispose of the source parameter when ValidatableReactiveProperty was called Dispose.</param>
+            <returns>The new instance of ValidatableReactiveProperty</returns>
+        </member>
+        <member name="M:Reactive.Bindings.ValidatableReactiveProperty.ToValidatableReactiveProperty``1(Reactive.Bindings.IReactiveProperty{``0},System.Linq.Expressions.Expression{System.Func{Reactive.Bindings.IReactiveProperty{``0}}},Reactive.Bindings.ReactivePropertyMode,System.Collections.Generic.IEqualityComparer{``0},System.Boolean)">
+            <summary>
+            Create the ValidationReactiveProperty instance from DataAnnotations attributes.
+            </summary>
+            <typeparam name="T">Property type</typeparam>
+            <param name="source">Target ReactiveProperty</param>
+            <param name="selfSelector">Target property as expression</param>
+            <param name="mode">The ReactivePropertyMode</param>
+            <param name="equalityComparer">The EqualityComparer for T</param>
+            <param name="disposeSource">Call Dispose of the source parameter when ValidatableReactiveProperty was called Dispose.</param>
+            <returns>The new instance of ValidatableReactiveProperty</returns>
+        </member>
+        <member name="M:Reactive.Bindings.ValidatableReactiveProperty.CreateFromDataAnnotations``1(``0,System.Linq.Expressions.Expression{System.Func{Reactive.Bindings.IReactiveProperty{``0}}},Reactive.Bindings.ReactivePropertyMode,System.Collections.Generic.IEqualityComparer{``0})">
+            <summary>
+            Create the ValidationReactiveProperty instance from DataAnnotations attributes.
+            </summary>
+            <typeparam name="T">Property type</typeparam>
+            <param name="initialValue">Initial value of ValidatableReactiveProperty</param>
+            <param name="selfSelector">Target property as expression</param>
+            <param name="mode">The ReactivePropertyMode</param>
+            <param name="equalityComparer">The EqualityComparer for T</param>
+            <returns>The new instance of ValidatableReactiveProperty</returns>
+        </member>
+    </members>
+</doc>

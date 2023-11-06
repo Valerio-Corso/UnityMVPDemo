@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MessagePack.UnityShims</name>
+    </assembly>
+    <members>
+        <member name="T:MessagePack.Unity.Extension.UnityBlitResolver">
+            <summary>
+            Special Resolver for Vector2[], Vector3[], Vector4[], Quaternion[], Color[], Bounds[], Rect[].
+            </summary>
+        </member>
+        <member name="T:MessagePack.Unity.Extension.UnityBlitWithPrimitiveArrayResolver">
+            <summary>
+            Special Resolver for Vector2[], Vector3[], Vector4[], Quaternion[], Color[], Bounds[], Rect[] + int[], float[], double[].
+            </summary>
+        </member>
+        <member name="T:MessagePack.ThisLibraryExtensionTypeCodes">
+            <summary>
+            The extension type codes that this library defines for just this library.
+            </summary>
+        </member>
+        <member name="F:MessagePack.ThisLibraryExtensionTypeCodes.UnityVector2">
+            <summary>
+            For Unity's UnsafeBlitFormatter.
+            </summary>
+        </member>
+        <member name="F:MessagePack.ThisLibraryExtensionTypeCodes.UnityVector3">
+            <summary>
+            For Unity's UnsafeBlitFormatter.
+            </summary>
+        </member>
+        <member name="F:MessagePack.ThisLibraryExtensionTypeCodes.UnityVector4">
+            <summary>
+            For Unity's UnsafeBlitFormatter.
+            </summary>
+        </member>
+        <member name="F:MessagePack.ThisLibraryExtensionTypeCodes.UnityQuaternion">
+            <summary>
+            For Unity's UnsafeBlitFormatter.
+            </summary>
+        </member>
+        <member name="F:MessagePack.ThisLibraryExtensionTypeCodes.UnityColor">
+            <summary>
+            For Unity's UnsafeBlitFormatter.
+            </summary>
+        </member>
+        <member name="F:MessagePack.ThisLibraryExtensionTypeCodes.UnityBounds">
+            <summary>
+            For Unity's UnsafeBlitFormatter.
+            </summary>
+        </member>
+        <member name="F:MessagePack.ThisLibraryExtensionTypeCodes.UnityRect">
+            <summary>
+            For Unity's UnsafeBlitFormatter.
+            </summary>
+        </member>
+        <member name="F:MessagePack.ThisLibraryExtensionTypeCodes.UnityInt">
+            <summary>
+            For Unity's UnsafeBlitFormatter.
+            </summary>
+        </member>
+        <member name="F:MessagePack.ThisLibraryExtensionTypeCodes.UnityFloat">
+            <summary>
+            For Unity's UnsafeBlitFormatter.
+            </summary>
+        </member>
+        <member name="F:MessagePack.ThisLibraryExtensionTypeCodes.UnityDouble">
+            <summary>
+            For Unity's UnsafeBlitFormatter.
+            </summary>
+        </member>
+        <member name="F:MessagePack.ThisLibraryExtensionTypeCodes.Lz4BlockArray">
+            <summary>
+            The LZ4 array block compression extension.
+            </summary>
+        </member>
+        <member name="F:MessagePack.ThisLibraryExtensionTypeCodes.Lz4Block">
+            <summary>
+            The LZ4 single block compression extension.
+            </summary>
+        </member>
+        <member name="F:MessagePack.ThisLibraryExtensionTypeCodes.TypelessFormatter">
+            <summary>
+            For the <see cref="T:MessagePack.Formatters.TypelessFormatter"/>.
+            </summary>
+        </member>
+    </members>
+</doc>
