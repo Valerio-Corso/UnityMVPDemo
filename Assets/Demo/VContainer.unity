@@ -1277,7 +1277,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'The two button live in different lifetime but are using the same data
-    structure.
+    reference.
 
 
     The subcontext increases the counter (right btn) which is reflected

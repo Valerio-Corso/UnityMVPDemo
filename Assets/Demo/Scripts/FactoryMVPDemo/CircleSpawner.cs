@@ -24,11 +24,12 @@ namespace Demo.Scripts.VContainerDemo.LifetimeScopes
 
 		public void Start()
 		{
+			// Some default data for the purpose of this demo.
 			Data.CircleData = new List<CircleScreenData>()
 			{
 				new() {Count = 1},
-				new() {Count = 5},
-				new() {Count = 10},
+				new() {Count = 2},
+				new() {Count = 3},
 			};
 			
 			_view.SpawnButtonOnClick.Subscribe(_ => Spawn()).AddTo(Disposer);
