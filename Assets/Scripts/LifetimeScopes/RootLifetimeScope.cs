@@ -17,6 +17,7 @@ namespace LifetimeScopes
             builder.Register<HelloWorldService>(Lifetime.Singleton);
             builder.Register<LifetimeScopeDisposer>(Lifetime.Scoped).AsImplementedInterfaces(); // Creates a new instance per scope
             builder.Register<LifeCycleDisposer>(Lifetime.Transient).AsImplementedInterfaces(); // Creates a new instance each time it is resolved no matter the scope.
+            builder.Register<GenericMvpFactory>(Lifetime.Scoped).AsImplementedInterfaces();
             
             SetupMessagePack();
         }

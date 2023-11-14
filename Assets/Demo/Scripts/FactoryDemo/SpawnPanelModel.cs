@@ -4,7 +4,7 @@ using UniRx;
 using UnityEngine;
 using VContainer.Unity;
 
-namespace Demo.Scripts.ViewFactoryDemo
+namespace Demo.Scripts.VContainerDemo.LifetimeScopes
 {
     public class SpawnPanelModel : IStartable
 	{

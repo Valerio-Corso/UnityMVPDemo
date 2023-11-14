@@ -3,7 +3,7 @@ using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Demo.Scripts.ViewFactoryDemo
+namespace Demo.Scripts.VContainerDemo.LifetimeScopes
 {
 	public interface ISpawnerView {
 		IObservable<Unit> SpawnButtonOnClick { get; }

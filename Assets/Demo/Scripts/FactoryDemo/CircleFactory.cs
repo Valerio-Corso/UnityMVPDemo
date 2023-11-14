@@ -1,8 +1,7 @@
 ﻿using Core;
-using Demo.Scripts.VContainerDemo.LifetimeScopes;
 using UnityEngine;
 
-namespace Demo.Scripts.ViewFactoryDemo
+namespace Demo.Scripts.VContainerDemo.LifetimeScopes
 {
     public interface ICircleFactory
 	{

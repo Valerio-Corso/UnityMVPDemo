@@ -1,7 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 
-namespace Demo.Scripts.ViewFactoryDemo
+namespace Demo.Scripts.VContainerDemo.LifetimeScopes
 {
 	public class CircleView : MonoBehaviour {
 		[SerializeField] private TextMeshProUGUI _text;

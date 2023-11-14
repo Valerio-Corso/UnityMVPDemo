@@ -1,10 +1,9 @@
 ﻿using Core.Helpers.VContainer;
-using Demo.Scripts.VContainerDemo.LifetimeScopes;
 using UnityEngine;
 using VContainer;
 using VContainer.Unity;
 
-namespace Demo.Scripts.ViewFactoryDemo
+namespace Demo.Scripts.VContainerDemo.LifetimeScopes
 {
 	public class CountSceneLifetimeScope : LifetimeScope
 	{

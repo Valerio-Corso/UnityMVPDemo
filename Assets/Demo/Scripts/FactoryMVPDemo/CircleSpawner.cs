@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using Core;
 using Core.Helpers;
 using Demo.Scripts.FactoryMVPDemo;
-using Demo.Scripts.ViewFactoryDemo;
 using UniRx;
 using UnityEngine;
 using VContainer.Unity;
@@ -11,11 +10,11 @@ namespace Demo.Scripts.VContainerDemo.LifetimeScopes
 {
 	public class CircleSpawner : BaseModel<CircleSavegameData>, IStartable
 	{
-		private readonly ICircleWithCountFactory _factory;
+		private readonly IMvpFactory _factory;
 		private readonly ISpawnerView _view;
-		private ILifeCycleDisposer _lifeCycleDisposer;
+		private readonly ILifeCycleDisposer _lifeCycleDisposer;
 
-		public CircleSpawner(ICircleWithCountFactory factory, ISpawnerView view, ILifeCycleDisposer lifeCycleDisposer)
+		public CircleSpawner(IMvpFactory factory, ISpawnerView view, ILifeCycleDisposer lifeCycleDisposer)
 		{
 			_factory = factory;
 			_view = view;
@@ -24,12 +23,11 @@ namespace Demo.Scripts.VContainerDemo.LifetimeScopes
 
 		public void Start()
 		{
-			// Some default data for the purpose of this demo.
 			Data.CircleData = new List<CircleScreenData>()
 			{
 				new() {Count = 1},
-				new() {Count = 2},
-				new() {Count = 3},
+				new() {Count = 5},
+				new() {Count = 10},
 			};
 			
 			_view.SpawnButtonOnClick.Subscribe(_ => Spawn()).AddTo(Disposer);
@@ -41,7 +39,7 @@ namespace Demo.Scripts.VContainerDemo.LifetimeScopes
 			var count = 1;
 			foreach (var circleScreenData in Data.CircleData)
 			{
-				_factory.Spawn(circleScreenData, _view.CircleSpawnParent, new Vector3(1 + count,1), _lifeCycleDisposer);
+				_factory.Spawn<CircleModel, CircleView, CirclePresenter, CircleScreenData>(circleScreenData, _view.CircleSpawnParent, new Vector3(1 + count,1), _lifeCycleDisposer);
 				count++;
 			}
 		}
